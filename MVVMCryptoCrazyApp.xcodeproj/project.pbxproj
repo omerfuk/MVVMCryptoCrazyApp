@@ -16,6 +16,7 @@
 		DE54D5EC287445DB00A1C05F /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D5EB287445DB00A1C05F /* CryptoTableViewCell.swift */; };
 		DE54D5F2287446CC00A1C05F /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D5F1287446CC00A1C05F /* CryptoCurrency.swift */; };
 		DE54D5F42874474500A1C05F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D5F32874474500A1C05F /* WebService.swift */; };
+		DE54D5F628744B5500A1C05F /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54D5F528744B5500A1C05F /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DE54D5EB287445DB00A1C05F /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		DE54D5F1287446CC00A1C05F /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		DE54D5F32874474500A1C05F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		DE54D5F528744B5500A1C05F /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DE54D5EF287446A900A1C05F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DE54D5F528744B5500A1C05F /* CryptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				DE54D5F42874474500A1C05F /* WebService.swift in Sources */,
 				DE54D5EC287445DB00A1C05F /* CryptoTableViewCell.swift in Sources */,
 				DE54D5DC2874445200A1C05F /* ViewController.swift in Sources */,
+				DE54D5F628744B5500A1C05F /* CryptoViewModel.swift in Sources */,
 				DE54D5D82874445200A1C05F /* AppDelegate.swift in Sources */,
 				DE54D5F2287446CC00A1C05F /* CryptoCurrency.swift in Sources */,
 				DE54D5DA2874445200A1C05F /* SceneDelegate.swift in Sources */,
