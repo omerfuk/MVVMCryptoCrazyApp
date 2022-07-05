@@ -17,7 +17,15 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        let url = URL(string: "https://api.nomics.com/v1/currencies/ticker?key=b760370c98bdc091cc18193a60b69598e3d12ae1")!
         
+        WebService().downloadCurrencies(url: url) { cryptos in
+            
+            if let cryptos = cryptos {
+                
+               
+            }
+        }
 
     }
 
