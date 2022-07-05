@@ -10,13 +10,30 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     private var cryptoListViewModel: CryptoListViewModel?
+    
+    var colorArray = [UIColor]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.colorArray = [
+            
+            UIColor(red: 75/255, green: 17/255, blue: 170/255, alpha: 1.0),
+            UIColor(red: 15/255, green: 32/255, blue: 170/255, alpha: 1.0),
+            UIColor(red: 34/255, green: 150/255, blue: 43/255, alpha: 1.0),
+            UIColor(red: 58/255, green: 44/255, blue: 32/255, alpha: 1.0),
+            UIColor(red: 76/255, green: 53/255, blue: 170/255, alpha: 1.0),
+            UIColor(red: 23/255, green: 21/255, blue: 170/255, alpha: 1.0)
+        
+        
+        ]
+
+        
         getData()
         
         //NOTHING
@@ -63,11 +80,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.priceText.text = cryptoViewModel?.price
         cell.currencyText.text = cryptoViewModel?.name
+        cell.backgroundColor = self.colorArray[indexPath.row % 6]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return view.frame.height / 6
     }
 }
